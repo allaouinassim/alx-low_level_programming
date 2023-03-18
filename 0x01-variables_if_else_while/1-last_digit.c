@@ -8,7 +8,8 @@
  */
 int main(void)
 {
-	int n, lastd;
+	int lastd;
+	char long n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -16,15 +17,15 @@ int main(void)
 
 	if (lastd > 5)
 	{
-	printf("Last digit of %d is %d and is  grater than 5\n", n, lastd);
+	printf("Last digit of %ld is %ld and is  grater than 5\n", n, lastd);
 	}
 	else if (lastd < 6 && lastd != 0)
 	{
-	printf("Last digit of %d is %d less than 6 and not 0\n", n, lastd);
+	printf("Last digit of %ld is %ld less than 6 and not 0\n", n, lastd);
 	}
 	else if (lastd == 0)
 	{
-	printf("Last digit of %d is %d 0\n", n, lastd);
+	printf("Last digit of %ld is %ld 0\n", n, lastd);
 	}
 	return (0);
 }
