@@ -1,14 +1,20 @@
-#include<stdio.h>
+#include"main.h"
 /**
- * main - Prints the alphabetic
- * Return: Always (Success)
+ * main - Print_alphabet_x10 - Make alphabet x10 times
+ * Return: void
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char c;
-
-	for(c = 'a'; c <= 'Z'; c++)
-	putchar(c);
-	putchar('\n');
-	return (0);
+	int i = 0;
+	
+	while (i <= 9)
+	{
+	for(c = 'a'; c <= 'z'; c++)
+	{
+	_putchar(c);
+	}
+	_putchar('\n');
+	i++;
+	}
 }
