@@ -1,10 +1,9 @@
 #include"main.h"
 
 /**
- * main - Print_alphabet_x10 - Make alphabet x10 times
- * Return: void
+ * print_alphabet_x10 - Make alphabet x10 times the alphabet
+ * Return: x10 a-z
  */
-
 void print_alphabet_x10(void)
 {
 	char c;
