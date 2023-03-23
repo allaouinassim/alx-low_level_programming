@@ -1,10 +1,12 @@
 #include"main.h"
+
 /**
  * main - test function positive or negative
  * Return: Always (Success)
  *
  */
 int main(void)
+
 {
 	int i;
 
