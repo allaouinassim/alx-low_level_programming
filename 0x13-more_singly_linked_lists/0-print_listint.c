@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * print_listint - prints all the elements of a listint_t list
- * @h: linked list of type listint_t to print
- * Return: (Success)
+ * struct listint_s -  prints all the elements of a listint_t list
+ * @h: input list
+ * Return: Num
+ * 
  */
 size_t print_listint(const listint_t *h)
 {
