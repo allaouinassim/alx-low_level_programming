@@ -7,21 +7,21 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int tmp;
-	int ShiftS;
+	int shifts, Count = 0;
+	unsigned long int temp;
 
-	if (n == 0)
+	for (shifts = 63; shifts >= 0; shifts--)
 	{
-		printf("0");
-		return;
-	}
-	for (tmp = n, ShiftS = 0; (tmp >>= 1) > 0; ShiftS++)
+		temp = n >> shifts;
 
-	for (; ShiftS >= 0; ShiftS--)
-	{
-		if ((n >> ShiftS) & 1)
-			printf("1");
-		else
-			printf("0");
+		if (temp & 1)
+		{
+			_putchar('1');
+			Count++;
+		}
+		else if (Count)
+			_putchar('0');
 	}
+	if (!Count)
+		_putchar('0');
 }
